@@ -1,0 +1,22 @@
+
+<div class="min-h-screen border-red-500 border-2
+            flex
+            flex-col
+            justify-center
+">
+  <h1 class="w-full text-center text-8xl">Andy's Bistro</h1>
+  <h2 class="w-full text-center text-3xl">Something Something Darkside</h2>
+  <div class="w-full flex flex-row flex-wrap justify-center items-end content-end border-blue-500 border-2">
+    <app-ad></app-ad>
+    <div class="w-52 h-44
+                flex flex-col justify-center content-center items-center space-evenly flex-wrap
+                mx-4 my-2
+                border-yellow-500 border-2">
+      <app-button [buttonText]="'Events'" [url]="'/events'"></app-button>
+      <app-button [buttonText]="'Menu'" [url]="'/Menu'"></app-button>
+      <app-button [buttonText]="'Green Room'" [url]="'/green-room'"></app-button>
+      <app-button [buttonText]="'Book Us!!!'" [url]="'/book-us'"></app-button>
+    </div>
+    <app-ad></app-ad>
+  </div>
+</div>
