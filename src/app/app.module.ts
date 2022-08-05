@@ -1,26 +1,34 @@
+// Angular Modules
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {CommonModule} from "@angular/common";
 
+// Third Party Modules
+
+
+// Page Modules
+import {PagesModule} from "./pages-module/pages.module";
+import {GreenRoomPageModule} from "./pages-module/green-room-page/green-room-page.module";
+
+// Feature Modules
+
+
+// App Modules
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import {CommonModule} from "@angular/common";
-import {MatToolbarModule} from "@angular/material/toolbar";
-import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CommonModule,
-    MatToolbarModule,
-    MatIconModule,
+    PagesModule,
+    GreenRoomPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
