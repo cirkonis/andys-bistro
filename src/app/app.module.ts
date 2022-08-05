@@ -8,6 +8,7 @@ import {CommonModule} from "@angular/common";
 
 // Page Modules
 import {PagesModule} from "./pages-module/pages.module";
+import {GreenRoomPageModule} from "./pages-module/green-room-page/green-room-page.module";
 
 // Feature Modules
 
@@ -27,6 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     CommonModule,
     PagesModule,
+    GreenRoomPageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,11 +5,14 @@ import { MainPageComponent } from './main-page.component';
 
 
 @NgModule({
-  declarations: [
-    MainPageComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+    declarations: [
+        MainPageComponent
+    ],
+    exports: [
+        MainPageComponent
+    ],
+    imports: [
+        CommonModule
+    ]
 })
 export class MainPageModule { }
