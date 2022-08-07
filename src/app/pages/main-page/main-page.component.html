@@ -1,33 +1,37 @@
+<div class="h-1/2 w-4/12 -z-10 bg-gradient-to-b from-blue-700 absolute top-0 left-0"></div>
+<div class="h-1/2 w-4/12 -z-10 bg-gradient-to-b from-red-700 absolute top-0 right-0"></div>
+
 <div class="min-h-screen
             flex
             flex-col
             justify-between
             py-12
+            z-50
 ">
   <div class="flex flex-col">
     <h1 class="w-full arkana-font text-center text-9xl">Andy'S</h1>
     <h1 class="w-full arkana-font text-center text-9xl">Bistro</h1>
   </div>
   <div class="flex flex-row flex-no-wrap justify-between px-8 align-middle w-full">
-  <h2 class="w-full matchbook-font text-center text-3xl">French cuisine catering by day</h2>
-  <h2 class="w-full matchbook-font text-center text-3xl">Famous night club by... night</h2>
+  <h2 class="w-full matchbook-font text-left text-3xl">French cuisine catering by day</h2>
+  <h2 class="w-full matchbook-font text-right text-3xl">Famous night club by... night</h2>
   </div>
   <div class="w-full h-full flex flex-col flex-wrap justify-end items-center content-center">
     <div class="w-52 h-full
                 flex flex-col justify-center content-center items-center space-evenly flex-wrap
-                mx-4 mt-2 -mb-12 z-10">
+                mx-4 mt-2 -mb-12 z-30">
       <app-button class='my-2' [buttonText]="'Events'" [url]="'/events'"></app-button>
       <app-button class='my-2' [buttonText]="'Menu'" [url]="'/Menu'"></app-button>
       <app-button class='my-2' [buttonText]="'Green Room'" [url]="'/green-room'"></app-button>
       <app-button class='my-2' [buttonText]="'Book Us!!!'" [url]="'/book-us'"></app-button>
     </div>
-    <div class="flex flex-wrap flex-row -mt-12 px-12 w-full justify-between z-20">
-      <app-ad imgPath="assets/images/mr-green.png"></app-ad>
+    <div class="flex flex-wrap flex-row -mt-12 px-12 w-full justify-between z-40">
       <app-ad imgPath="assets/images/BadaBing.jpeg"></app-ad>
+      <app-ad imgPath="assets/images/mr-green.png"></app-ad>
     </div>
   </div>
   <div class="matchbook-font text-center text-md h-4 -mb-8">
     Powered by <span class="text-red-500">RagePie</span>
-    and made possible by our lovely sponsors <span class="text-green-500">Mr.Green</span> &
+    and made possible by our lovely 'sponsors' <span class="text-green-500">Mr.Green</span> &
     <span class="text-purple-500">Bada Bing!</span></div>
 </div>
