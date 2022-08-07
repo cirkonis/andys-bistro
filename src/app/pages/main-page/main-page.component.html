@@ -1,22 +1,33 @@
-
-<div class="min-h-screen border-red-500 border-2
+<div class="min-h-screen
             flex
             flex-col
-            justify-center
+            justify-between
+            py-12
 ">
-  <h1 class="w-full text-center text-8xl">Andy's Bistro</h1>
-  <h2 class="w-full text-center text-3xl">Something Something Darkside</h2>
-  <div class="w-full flex flex-row flex-wrap justify-center items-end content-end border-blue-500 border-2">
-    <app-ad></app-ad>
-    <div class="w-52 h-44
-                flex flex-col justify-center content-center items-center space-evenly flex-wrap
-                mx-4 my-2
-                border-yellow-500 border-2">
-      <app-button [buttonText]="'Events'" [url]="'/events'"></app-button>
-      <app-button [buttonText]="'Menu'" [url]="'/Menu'"></app-button>
-      <app-button [buttonText]="'Green Room'" [url]="'/green-room'"></app-button>
-      <app-button [buttonText]="'Book Us!!!'" [url]="'/book-us'"></app-button>
-    </div>
-    <app-ad></app-ad>
+  <div class="flex flex-col">
+    <h1 class="w-full arkana-font text-center text-9xl">Andy'S</h1>
+    <h1 class="w-full arkana-font text-center text-9xl">Bistro</h1>
   </div>
+  <div class="flex flex-row flex-no-wrap justify-between px-8 align-middle w-full">
+  <h2 class="w-full matchbook-font text-center text-3xl">French cuisine catering by day</h2>
+  <h2 class="w-full matchbook-font text-center text-3xl">Famous night club by... night</h2>
+  </div>
+  <div class="w-full h-full flex flex-col flex-wrap justify-end items-center content-center">
+    <div class="w-52 h-full
+                flex flex-col justify-center content-center items-center space-evenly flex-wrap
+                mx-4 mt-2 -mb-12 z-10">
+      <app-button class='my-2' [buttonText]="'Events'" [url]="'/events'"></app-button>
+      <app-button class='my-2' [buttonText]="'Menu'" [url]="'/Menu'"></app-button>
+      <app-button class='my-2' [buttonText]="'Green Room'" [url]="'/green-room'"></app-button>
+      <app-button class='my-2' [buttonText]="'Book Us!!!'" [url]="'/book-us'"></app-button>
+    </div>
+    <div class="flex flex-wrap flex-row -mt-12 px-12 w-full justify-between z-20">
+      <app-ad imgPath="assets/images/mr-green.png"></app-ad>
+      <app-ad imgPath="assets/images/BadaBing.jpeg"></app-ad>
+    </div>
+  </div>
+  <div class="matchbook-font text-center text-md h-4 -mb-8">
+    Powered by <span class="text-red-500">RagePie</span>
+    and made possible by our lovely sponsors <span class="text-green-500">Mr.Green</span> &
+    <span class="text-purple-500">Bada Bing!</span></div>
 </div>
