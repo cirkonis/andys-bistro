@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MainPageComponent } from './main-page.component';
+import {FeaturesModule} from "../../features/features.module";
 
 
 
@@ -12,7 +13,8 @@ import { MainPageComponent } from './main-page.component';
         MainPageComponent
     ],
     imports: [
-        CommonModule
+        CommonModule,
+        FeaturesModule
     ]
 })
 export class MainPageModule { }

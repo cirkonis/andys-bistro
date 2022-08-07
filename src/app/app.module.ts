@@ -7,8 +7,8 @@ import {CommonModule} from "@angular/common";
 
 
 // Page Modules
-import {PagesModule} from "./pages-module/pages.module";
-import {GreenRoomPageModule} from "./pages-module/green-room-page/green-room-page.module";
+import {PagesModule} from "./pages/pages.module";
+import {GreenRoomPageModule} from "./pages/green-room-page/green-room-page.module";
 
 // Feature Modules
 
