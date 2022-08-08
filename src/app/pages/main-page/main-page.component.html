@@ -20,9 +20,10 @@
     <div class="w-52 h-full
                 flex flex-col justify-center content-center items-center space-evenly flex-wrap
                 mx-4 mt-2 -mb-12 z-30">
+      <app-button class='my-2' [buttonText]="'About'" [url]="'/about'"></app-button>
       <app-button class='my-2' [buttonText]="'Events'" [url]="'/events'"></app-button>
       <app-button class='my-2' [buttonText]="'Menu'" [url]="'/menu'"></app-button>
-      <app-button class='my-2' [buttonText]="'Green Room'" [url]="'/green-room'"></app-button>
+      <app-button class='my-2 text-green-700' [buttonText]="'Green Room'" [url]="'/green-room'"></app-button>
       <app-button class='my-2' [buttonText]="'Book Us!!!'" [url]="'/book-us'"></app-button>
     </div>
     <div class="flex flex-wrap flex-row -mt-12 px-12 w-full justify-between z-20">
