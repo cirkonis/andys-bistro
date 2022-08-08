@@ -1,0 +1,10 @@
+<div class="flex flex-col flex-wrap w-44 h-77 px-6 py-6 shadow-lg justify-start">
+  <div class="arkana-font text-4xl h-full w-44 cursor-pointer" routerLink="/main">Andy'S Bistro</div>
+  <div class="w-full flex flex-col flex-no-wrap justify-end">
+      <app-button [buttonText]="'About'" [url]="'/about'"></app-button>
+      <app-button [buttonText]="'Events'" [url]="'/events'" ></app-button>
+      <app-button [buttonText]="'Menu'" [url]="'/menu'"></app-button>
+      <app-button [buttonText]="'Room'" [url]="'/green-room'" class='text-green-700'></app-button>
+      <app-button [buttonText]="'Book'" [url]="'/book-us'"></app-button>
+  </div>
+</div>
