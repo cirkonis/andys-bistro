@@ -1,3 +1,8 @@
-<div class="h-24 w-24 rounded-full">
-  <img src="{{this.imgPath}}" alt="{{this.alt}}">
+<div class="cursor-pointer h-36 w-32 block border-t-2 border-l-2 border-r-2 border-b-0 border-gray-200 shadow-md flex flex-col flex-no-wrap justify-start">
+  <div class="w-full flex flex-no-wrap justify-end">
+    <p class="w-4 h-7 text-gray-400 border-2 border-gray-300 text-center text-bold active:text-gray-600">&#215;</p>
+  </div>
+  <img class="bf-cover" src="{{this.imgPath}}" alt="{{this.alt}}" (click)="goToAdSite(this.url)">
 </div>
+<div class="bg-transparent bg-gradient-to-b from-{{this.bottomGradientColor}}-700 w-full h-12 border-l-2 border-r-2 border-b-0 border-gray-200 shadow-md"></div>
+
