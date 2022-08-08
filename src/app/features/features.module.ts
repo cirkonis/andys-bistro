@@ -9,16 +9,19 @@ import {RouterModule} from "@angular/router";
 //Components
 import {ButtonComponent} from "./button/button.component";
 import { AdComponent } from './ad/ad.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
     ButtonComponent,
-    AdComponent
+    AdComponent,
+    ToolbarComponent
   ],
-  exports: [
-    ButtonComponent,
-    AdComponent
-  ],
+    exports: [
+        ButtonComponent,
+        AdComponent,
+        ToolbarComponent
+    ],
   imports: [
     CommonModule,
     RouterModule,
