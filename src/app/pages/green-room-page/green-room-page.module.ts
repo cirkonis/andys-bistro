@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GreenRoomPageComponent } from './green-room-page.component';
+import {FeaturesModule} from "../../features/features.module";
 
 
 
@@ -8,8 +9,9 @@ import { GreenRoomPageComponent } from './green-room-page.component';
   declarations: [
     GreenRoomPageComponent
   ],
-  imports: [
-    CommonModule
-  ]
+    imports: [
+        CommonModule,
+        FeaturesModule
+    ]
 })
 export class GreenRoomPageModule { }

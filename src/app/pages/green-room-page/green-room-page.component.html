@@ -1,1 +1,42 @@
-<p>green-room-page works!</p>
+<app-toolbar class="fixed top-0 left-0 z-40 bg-white"></app-toolbar>
+<div class="absolute top-0 left-0 w-screen h-screen z-20 bg-gradient-to-b from-green-700"></div>
+<div class="relative w-screen mx-auto flex lg:w-4/5 lg:px-48 scroll-snap-parent">
+  <div class=" pt-72 mx-auto w-full h-full bg-white flex flex-col z-30 scroll-snap-child">
+    <div class="h-1/3 flex flex-row flex-wrap justify-start items-end">
+      <div
+        class="w-full text-center text-green-700 align-bottom matchbook-font font-bold text-8xl py-6 px-4 mb-8">
+        The Green Room
+      </div>
+      <div class="flex flex-row justify-center flex-wrap w-full">
+        <div
+          class="w-80 h-80 mb-8 bg-[url('assets/images/mr-green.png')] bg-contain bg-no-repeat bg-center lg:w-2/3"></div>
+      </div>
+    </div>
+    <div class="w-full px-8 matchbook-font leading-relaxed text-5xl"><span class="arkana-font">&nbsp; Andy'S Bistro &nbsp;</span>and
+      <span class="text-green-700 font-bold">Mr. Green</span>
+      have partnered up to bring you <span class="text-green-700"> The Green Room</span>. After you're all fueled up on
+      French cuisine you will find the chefs of the bistro
+      inside a kitchen transformed into a space designed for you to party and dance the night away. <span
+        class="text-green-700"> The Green Room</span> can only
+      be experienced, not described, so you'll simply have to join in to find out whats in store. <span
+        class="text-green-700 font-bold">See you there</span>.
+    </div>
+    <div class="w-full flex justify-center mt-8 z-10 overflow-hidden">
+      <app-ad [url]="'https://www.mrgreen.com/da/'" bottomGradientColor="green"
+              imgPath="assets/images/mr-green.png"></app-ad>
+      <app-ad [url]="'https://www.mrgreen.com/da/'" bottomGradientColor="green"
+              imgPath="assets/images/mr-green.png"></app-ad>
+      <app-ad [url]="'https://www.mrgreen.com/da/'" bottomGradientColor="green"
+              imgPath="assets/images/mr-green.png"></app-ad>
+      <app-ad [url]="'https://www.mrgreen.com/da/'" bottomGradientColor="green"
+              imgPath="assets/images/mr-green.png"></app-ad>
+      <app-ad [url]="'https://www.mrgreen.com/da/'" bottomGradientColor="green"
+              imgPath="assets/images/mr-green.png"></app-ad>
+      <app-ad [url]="'https://www.mrgreen.com/da/'" bottomGradientColor="green"
+              imgPath="assets/images/mr-green.png"></app-ad>
+      <app-ad [url]="'https://www.mrgreen.com/da/'" bottomGradientColor="green"
+              imgPath="assets/images/mr-green.png"></app-ad>
+    </div>
+  </div>
+</div>
+
