@@ -5,12 +5,14 @@ import {GreenRoomPageComponent} from "./pages/green-room-page/green-room-page.co
 import {AboutPageComponent} from "./pages/about-page/about-page.component";
 import {EventsPageComponent} from "./pages/events-page/events-page.component";
 import {SadPageComponent} from "./pages/sad-page/sad-page.component";
+import {MenuPageComponent} from "./pages/menu-page/menu-page.component";
 
 const routes: Routes = [
   {path: 'main', component: MainPageComponent},
   {path: 'about', component: AboutPageComponent},
   {path: 'events', component: EventsPageComponent},
   {path: 'green-room', component: GreenRoomPageComponent},
+  {path: 'menu', component: MenuPageComponent},
   {path: 'sad', component: SadPageComponent},
   {path: '', redirectTo: '/main', pathMatch: 'full'},
   {path: '**', component: SadPageComponent},
