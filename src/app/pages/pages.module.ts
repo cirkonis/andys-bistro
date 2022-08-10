@@ -1,24 +1,28 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MainPageModule } from "./main-page/main-page.module";
-import {GreenRoomPageModule} from "./green-room-page/green-room-page.module";
-import {AboutPageModule} from "./about-page/about-page.module";
-import {EventsPageModule} from "./events-page/events-page.module";
-import {SadPageModule} from "./sad-page/sad-page.module";
-import {MenuPageModule} from "./menu-page/menu-page.module";
+import {AboutPageComponent} from "./about-page/about-page.component";
+import {AngryPageComponent} from "./angry-page/angry-page.component";
+import {EventsPageComponent} from "./events-page/events-page.component";
+import {GreenRoomPageComponent} from "./green-room-page/green-room-page.component";
+import {MainPageComponent} from "./main-page/main-page.component";
+import {MenuPageComponent} from "./menu-page/menu-page.component";
+import {SadPageComponent} from "./sad-page/sad-page.component";
+import {FeaturesModule} from "../features/features.module";
 
 @NgModule({
   declarations: [
+    AboutPageComponent,
+    AngryPageComponent,
+    EventsPageComponent,
+    GreenRoomPageComponent,
+    MainPageComponent,
+    MenuPageComponent,
+    SadPageComponent
   ],
   imports: [
     CommonModule,
-    MainPageModule,
-    GreenRoomPageModule,
-    AboutPageModule,
-    EventsPageModule,
-    SadPageModule,
-    MenuPageModule,
+    FeaturesModule
   ],
-  exports:[MainPageModule, GreenRoomPageModule, AboutPageModule, EventsPageModule, SadPageModule, MenuPageModule]
+  exports:[AboutPageComponent, AngryPageComponent, EventsPageComponent, GreenRoomPageComponent, MainPageComponent, MenuPageComponent, SadPageComponent],
 })
 export class PagesModule { }
