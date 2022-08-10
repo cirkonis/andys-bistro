@@ -6,6 +6,7 @@ import {AboutPageComponent} from "./pages/about-page/about-page.component";
 import {EventsPageComponent} from "./pages/events-page/events-page.component";
 import {SadPageComponent} from "./pages/sad-page/sad-page.component";
 import {MenuPageComponent} from "./pages/menu-page/menu-page.component";
+import {AngryPageComponent} from "./pages/angry-page/angry-page.component";
 
 const routes: Routes = [
   {path: 'main', component: MainPageComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'green-room', component: GreenRoomPageComponent},
   {path: 'menu', component: MenuPageComponent},
   {path: 'sad', component: SadPageComponent},
+  {path: 'angry', component: AngryPageComponent},
   {path: '', redirectTo: '/main', pathMatch: 'full'},
   {path: '**', component: SadPageComponent},
 ];
