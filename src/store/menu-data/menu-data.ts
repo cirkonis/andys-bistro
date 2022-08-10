@@ -1,4 +1,4 @@
-import {IMenu} from "../../../../interfaces/IMenu";
+import {IMenu} from "../../interfaces/IMenu";
 import * as Dishes from './dish-data';
 
 export const MenuData: IMenu = {
