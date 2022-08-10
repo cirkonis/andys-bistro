@@ -1,6 +1,6 @@
-import {IDishIngredient} from "../../../../interfaces/IDishIngredient";
-import {EIngredientNames} from "../../../../enums/EIngredientNames";
-import {EIngredientLabels} from "../../../../enums/EIngredientLabels";
+import {IDishIngredient} from "../../interfaces/IDishIngredient";
+import {EIngredientNames} from "../../enums/EIngredientNames";
+import {EIngredientLabels} from "../../enums/EIngredientLabels";
 
 export const CARROT: IDishIngredient = {
   name: EIngredientNames.CARROT,

@@ -1,4 +1,4 @@
-import {IDish} from "../../../../interfaces/IDish";
+import {IDish} from "../../interfaces/IDish";
 import * as Ingredients from './ingredient-data'
 
 

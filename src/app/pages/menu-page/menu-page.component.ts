@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {map, Observable, of} from "rxjs";
-import {MenuData} from "./menu-data/menu-data";
+import {Observable} from "rxjs";
 import {IMenu} from "../../../interfaces/IMenu";
+import {Store} from "@ngrx/store";
+import {selectMenu} from "../../../store/menu.selectors";
 
 @Component({
   selector: 'app-menu-page',
@@ -9,11 +10,11 @@ import {IMenu} from "../../../interfaces/IMenu";
   styleUrls: ['./menu-page.component.css']
 })
 export class MenuPageComponent implements OnInit {
-  menu$: Observable<IMenu> = of(MenuData);
+  $menu: Observable<IMenu> = this.store.select(selectMenu);
 
-  dishes$ = this.menu$.pipe(map((menu)=> menu.categories.map((categories)=> categories.dishes)))
+  // dishes$ = this.menu$.pipe(map((menu)=> menu.categories.map((categories)=> categories.dishes)))
 
-  constructor() { }
+  constructor(private store: Store) { }
 
   ngOnInit(): void {
   }

@@ -1,6 +1,4 @@
-<h1>{{menu$ | async}}</h1>
-
-<div>{{(dishes | async) | json}}</div>
+<div>{{($menu | async).title}}</div>
 <div class="w-96 h-screen mx-auto py-48 flex flex-col items-center">
   <div class="w-96 h-96 bg-[url('assets/images/horse.jpeg')] bg-contain bg-no-repeat bg-center mb-8"></div>
   <div class="font-bold text-center">HEY!!! <br> We are working on this. So hold your fucking horses alright.
