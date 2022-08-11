@@ -1,26 +1,24 @@
 // Angular Modules
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 import {CommonModule} from "@angular/common";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 // Third Party Modules
 import {StoreModule} from "@ngrx/store";
 import {StoreDevtoolsModule} from "@ngrx/store-devtools";
 
-// Page Modules
-import {PagesModule} from "./pages/pages.module";
-
-// Feature Modules
-import {FeaturesModule} from "./features/features.module";
 
 // App Modules
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {PagesModule} from "./pages/pages.module";
+import {FeaturesModule} from "./features/features.module";
 
-// App Files
+// Everything else
+
 import {reducers} from "../store";
 import {environment} from "../environments/environment";
+import {AppComponent} from './app.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +38,9 @@ import {environment} from "../environments/environment";
     })
   ],
   providers: [],
+  exports: [
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
