@@ -1,6 +1,5 @@
-<div>{{($menu | async).title}}</div>
-<div *ngFor="let category of ($menu | async).categories">
+<div>{{($edibleMenu | async).title}}</div>
+<div *ngFor="let category of ($edibleMenu | async).categories">
   <app-menu-category [categoryTitle]="category.categoryTitle" [dishes]="category.dishes"></app-menu-category>
 </div>
-<div>{{(($menu | edibleMenuPipe) | async) | json}}</div>
 <app-preferences></app-preferences>

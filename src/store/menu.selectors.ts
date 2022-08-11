@@ -5,5 +5,7 @@ export const selectState = createSelector(getMenuState, (state) => state);
 
 export const selectMenu = createSelector(getMenuState, (state) => state.menu);
 
+export const selectEdibleMenu = createSelector(getMenuState, (state) => state.edibleMenu);
+
 export const selectPreferences = createSelector(getMenuState, (state) => state.preferences);
 
