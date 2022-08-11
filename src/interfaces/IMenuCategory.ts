@@ -1,6 +1,7 @@
 import {IDish} from "./IDish";
+import {EMenuCategories} from "../enums/EMenuCategories";
 
 export interface IMenuCategory {
-  type: string;
+  categoryTitle: EMenuCategories;
   dishes: IDish[];
 }

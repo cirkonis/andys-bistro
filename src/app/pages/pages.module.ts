@@ -8,6 +8,8 @@ import {MainPageComponent} from "./main-page/main-page.component";
 import {MenuPageComponent} from "./menu-page/menu-page.component";
 import {SadPageComponent} from "./sad-page/sad-page.component";
 import {FeaturesModule} from "../features/features.module";
+import { MenuCategoryComponent } from './menu-page/menu-page-components/menu-category/menu-category.component';
+import {EdibleMenuPipe} from "../../pipes/edible-menu.pipe";
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import {FeaturesModule} from "../features/features.module";
     GreenRoomPageComponent,
     MainPageComponent,
     MenuPageComponent,
-    SadPageComponent
+    SadPageComponent,
+    MenuCategoryComponent,
+    EdibleMenuPipe,
   ],
-  imports: [
-    CommonModule,
-    FeaturesModule
-  ],
+    imports: [
+        CommonModule,
+        FeaturesModule,
+    ],
   exports:[AboutPageComponent, AngryPageComponent, EventsPageComponent, GreenRoomPageComponent, MainPageComponent, MenuPageComponent, SadPageComponent],
 })
 export class PagesModule { }

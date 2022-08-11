@@ -1,15 +1,16 @@
 import {IMenu} from "../../interfaces/IMenu";
 import * as Dishes from './dish-data';
+import {EMenuCategories} from "../../enums/EMenuCategories";
 
 export const MenuData: IMenu = {
   title: 'Rustrip Menu',
   categories: [
     {
-      type: 'DAY 1 Lunch',
+      categoryTitle: EMenuCategories.DAY_ONE_LUNCH,
       dishes: [Dishes.CHICKEN_AND_VEGGIES, Dishes.JUST_VEGGIES]
     },
     {
-      type: 'DAY 1 Dinner',
+      categoryTitle: EMenuCategories.DAY_ONE_DINNER,
       dishes: [Dishes.CHICKEN_AND_VEGGIES, Dishes.JUST_VEGGIES]
     }
   ]
