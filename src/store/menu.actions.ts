@@ -1,20 +1,20 @@
 import {Action} from "@ngrx/store";
-import {EIngredientLabels} from "../enums/EIngredientLabels";
+import {IPreference} from "../interfaces/IPreference";
 
 export enum MenuActionTypes {
-  GET_MENU='GET_MENU',
+  GET_STATE='GET_STATE',
   UPDATE_PREFERENCES='UPDATE_PREFERENCES'
 }
 
-export class GetMenuAction implements Action {
-  readonly type = MenuActionTypes.GET_MENU;
+export class GetStateAction implements Action {
+  readonly type = MenuActionTypes.GET_STATE;
   constructor() {
   }
 }
 
-export class Update_Preferences implements Action {
+export class UpdatePreferences implements Action {
   readonly type = MenuActionTypes.UPDATE_PREFERENCES;
 
-  constructor(readonly payload: EIngredientLabels) {
+  constructor(readonly payload: IPreference) {
   }
 }

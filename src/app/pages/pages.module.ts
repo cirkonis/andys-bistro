@@ -10,6 +10,7 @@ import {SadPageComponent} from "./sad-page/sad-page.component";
 import {FeaturesModule} from "../features/features.module";
 import { MenuCategoryComponent } from './menu-page/menu-page-components/menu-category/menu-category.component';
 import {EdibleMenuPipe} from "../../pipes/edible-menu.pipe";
+import { PreferencesComponent } from './menu-page/menu-page-components/preferences/preferences.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {EdibleMenuPipe} from "../../pipes/edible-menu.pipe";
     SadPageComponent,
     MenuCategoryComponent,
     EdibleMenuPipe,
+    PreferencesComponent,
   ],
     imports: [
         CommonModule,

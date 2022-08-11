@@ -2,7 +2,7 @@ import {IMenu} from "../../interfaces/IMenu";
 import * as Dishes from './dish-data';
 import {EMenuCategories} from "../../enums/EMenuCategories";
 
-export const MenuData: IMenu = {
+export const MENU_DATA : IMenu = {
   title: 'Rustrip Menu',
   categories: [
     {

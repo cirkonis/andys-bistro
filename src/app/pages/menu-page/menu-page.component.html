@@ -3,3 +3,4 @@
   <app-menu-category [categoryTitle]="category.categoryTitle" [dishes]="category.dishes"></app-menu-category>
 </div>
 <div>{{(($menu | edibleMenuPipe) | async) | json}}</div>
+<app-preferences></app-preferences>

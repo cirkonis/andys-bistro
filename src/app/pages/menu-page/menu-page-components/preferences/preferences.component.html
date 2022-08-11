@@ -1,0 +1,3 @@
+<div *ngFor="let preference of (preferences$ | async);">
+  <div (click)="updatePreferences(preference)">{{preference.label}} is active? {{preference.isActive}}</div>
+</div>
