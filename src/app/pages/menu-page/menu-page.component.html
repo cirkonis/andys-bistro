@@ -1,5 +1,23 @@
-<div>{{($edibleMenu | async).title}}</div>
-<div *ngFor="let category of ($edibleMenu | async).categories">
-  <app-menu-category [categoryTitle]="category.categoryTitle" [dishes]="category.dishes"></app-menu-category>
+<app-toolbar class="fixed top-0 left-0 z-40 bg-white"></app-toolbar>
+<app-preferences class="fixed bottom-2 right-2 z-40"></app-preferences>
+
+<div class="relative w-screen mx-auto flex lg:w-4/5 lg:px-48">
+  <div class="pt-12 mx-auto w-full h-full flex flex-col z-30">
+    <div class="h-1/3 flex flex-row flex-wrap bg-white justify-start items-end">
+      <div
+        class="w-full text-center align-bottom arkana-font text-8xl py-6 px-4 mb-2 bg-white">
+        {{($edibleMenu | async).title}}
+      </div>
+      <div class="w-full flex flex-row justify-evenly mb-3">
+        <span class="matchbook-font text-2xl font bold">Breakfast - 10:00</span>
+        <span class="matchbook-font text-2xl font bold">Lunch -  13:30</span>
+        <span class="matchbook-font text-2xl font bold">Dinner -  19:00</span>
+      </div>
+      <div *ngFor="let category of ($edibleMenu | async).categories" class="flex flex-col w-full justify-center">
+        <app-menu-category [categoryTitle]="category.categoryTitle" [dishes]="category.dishes"
+                           class="my-4"></app-menu-category>
+        <div class="border-b-2 w-1/2 mx-auto"></div>
+      </div>
+    </div>
+  </div>
 </div>
-<app-preferences></app-preferences>

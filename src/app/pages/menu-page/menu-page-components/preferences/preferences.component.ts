@@ -13,13 +13,20 @@ export class PreferencesComponent implements OnInit {
 
   preferences$ = this.store.select(selectPreferences);
 
+  hidden: boolean;
+
   constructor(private store: Store) { }
 
   ngOnInit(): void {
+    this.hidden = false;
   }
 
   updatePreferences(preference: IPreference): void{
       this.store.dispatch(new UpdatePreferences(preference))
+  }
+
+  setHidden(): void{
+    this.hidden = !this.hidden;
   }
 
 }
