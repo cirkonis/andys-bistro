@@ -1,0 +1,44 @@
+<div *ngIf="hidden">
+  <div (click)="setHidden()"
+       class="
+  rounded-sm
+  bg-gradient-to-r from-blue-700 via-white to-red-700
+  w-full h-12 px-10 pt-2
+  matchbook-font
+  font-bold
+  text-3xl
+  cursor-pointer
+  hover:bg-gradient-to-r hover:from-blue-700
+  active:bg-gradient-to-l active:from-red-700
+  transition ease-in-out delay-150
+  ">
+    Preferences
+  </div>
+</div>
+
+<div *ngIf="!hidden" class="shadow-lg bg-white">
+  <div class="w-56 flex flex-row flex-wrap">
+    <div *ngFor="let preference of (preferences$ | async);" class="">
+      <div (click)="updatePreferences(preference)"
+           *ngIf="preference.isActive" class="mx-2 my-2 rounded-full border-green-300 border-2 px-2 py-2 cursor-pointer bg-green-700 text-white">{{preference.label}}</div>
+      <div (click)="updatePreferences(preference)"
+           *ngIf="!preference.isActive" class="mx-2 my-2 rounded-full border-green-300 border-2 px-2 py-2 cursor-pointer">{{preference.label}}</div>
+    </div>
+  </div>
+  <div (click)="setHidden()" class="
+  w-1/4
+  mx-auto
+  rounded-sm
+  bg-gradient-to-r from-blue-700 via-white to-red-700
+  matchbook-font
+  font-bold
+  text-4xl
+  cursor-pointer
+  hover:bg-gradient-to-r hover:from-blue-700
+  active:bg-gradient-to-l active:from-red-700
+  tracking-wider
+  px-3
+  pt-2
+">HIDE
+  </div>
+</div>
