@@ -1,5 +1,5 @@
 import {Action} from "@ngrx/store";
-import {IPreference} from "../interfaces/IPreference";
+import {IInedibleFlag} from "../interfaces/IInedibleFlag";
 
 export enum MenuActionTypes {
   GET_STATE='GET_STATE',
@@ -15,6 +15,6 @@ export class GetStateAction implements Action {
 export class UpdatePreferences implements Action {
   readonly type = MenuActionTypes.UPDATE_PREFERENCES;
 
-  constructor(readonly payload: IPreference) {
+  constructor(readonly payload: IInedibleFlag) {
   }
 }

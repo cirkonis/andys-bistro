@@ -1,20 +1,20 @@
 import {IMenu} from "../interfaces/IMenu";
 import {MENU_DATA} from "./menu-data/menu-data";
-import {PREFERENCE_DATA} from "./menu-data/preference-data";
+import {INEDIBLE_DATA} from "./menu-data/inedible-data";
 import {Action} from "@ngrx/store";
 import {MenuActionTypes} from "./menu.actions";
-import {IPreference} from "../interfaces/IPreference"
+import {IInedibleFlag} from "../interfaces/IInedibleFlag"
 
 export interface MenuState {
   menu: IMenu;
   edibleMenu: IMenu;
-  preferences: IPreference[];
+  inedibleFlags: IInedibleFlag[];
 }
 
 const initialState: MenuState = {
   menu: JSON.parse(JSON.stringify(MENU_DATA)),
   edibleMenu: JSON.parse(JSON.stringify(MENU_DATA)),
-  preferences: [...PREFERENCE_DATA],
+  inedibleFlags: [...INEDIBLE_DATA],
 }
 
 export function reducer(state = initialState, action: Action): MenuState {
@@ -26,12 +26,12 @@ export function reducer(state = initialState, action: Action): MenuState {
     case MenuActionTypes.UPDATE_PREFERENCES:
 
       // Update the state preferences array
-      const index = state.preferences.findIndex(preference => preference.label === (action as any).payload.label)
-      let newPreferences: IPreference[] = [...state.preferences];
+      const index = state.inedibleFlags.findIndex(flag => flag.label === (action as any).payload.label)
+      let newPreferences: IInedibleFlag[] = [...state.inedibleFlags];
       let activeState: boolean = !(action as any).payload.isActive
-      newPreferences[index] = {label: (action as any).payload.label, isActive: activeState}
+      newPreferences[index] = { ... (action as any).payload, isActive: activeState}
 
-      let activePreferences: IPreference[] = newPreferences.filter(preference => preference.isActive === true);
+      let activePreferences: IInedibleFlag[] = newPreferences.filter(preference => preference.isActive === true);
 
       console.log(activePreferences);
 
@@ -41,7 +41,7 @@ export function reducer(state = initialState, action: Action): MenuState {
         for (let dish of category.dishes) {
           dish.edible = true;
           for (let ingredient of dish.ingredients) {
-            for (let element of ingredient.contains) {
+            for (let element of ingredient.inedibleFlags) {
               for (let preference of activePreferences) {
                 if (preference.label === element) {
                   dish.edible = false;
@@ -56,7 +56,7 @@ export function reducer(state = initialState, action: Action): MenuState {
       return {
         ...state,
         edibleMenu: newEdibleMenu,
-        preferences: newPreferences
+        inedibleFlags: newPreferences
       }
     default:
       return state

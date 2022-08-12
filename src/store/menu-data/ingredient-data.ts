@@ -1,18 +1,18 @@
 import {IDishIngredient} from "../../interfaces/IDishIngredient";
 import {EIngredientNames} from "../../enums/EIngredientNames";
-import {EIngredientLabels} from "../../enums/EIngredientLabels";
+import {EInedibleFlags} from "../../enums/EInedibleFlags";
 
 export const CARROT: IDishIngredient = {
   name: EIngredientNames.CARROT,
-  contains: []
+  inedibleFlags: []
 }
 
 export const ONION: IDishIngredient = {
   name: EIngredientNames.ONION,
-  contains: [EIngredientLabels.ONION]
+  inedibleFlags: [EInedibleFlags.ONION]
 }
 
 export const CHICKEN: IDishIngredient = {
   name: EIngredientNames.CHICKEN,
-  contains: [EIngredientLabels.MEAT],
+  inedibleFlags: [EInedibleFlags.VEGAN, EInedibleFlags.VEGETARIAN],
 }
