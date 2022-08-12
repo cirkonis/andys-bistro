@@ -9,3 +9,5 @@ export const selectEdibleMenu = createSelector(getMenuState, (state) => state.ed
 
 export const selectPreferences = createSelector(getMenuState, (state) => state.inedibleFlags);
 
+export const selectToolBarHidden = createSelector(getMenuState, (state) => state.toolBarHidden);
+

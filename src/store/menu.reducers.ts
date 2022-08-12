@@ -9,12 +9,14 @@ export interface MenuState {
   menu: IMenu;
   edibleMenu: IMenu;
   inedibleFlags: IInedibleFlag[];
+  toolBarHidden: boolean;
 }
 
 const initialState: MenuState = {
   menu: JSON.parse(JSON.stringify(MENU_DATA)),
   edibleMenu: JSON.parse(JSON.stringify(MENU_DATA)),
   inedibleFlags: [...INEDIBLE_DATA],
+  toolBarHidden: true,
 }
 
 export function reducer(state = initialState, action: Action): MenuState {
@@ -57,6 +59,11 @@ export function reducer(state = initialState, action: Action): MenuState {
         ...state,
         edibleMenu: newEdibleMenu,
         inedibleFlags: newPreferences
+      }
+    case MenuActionTypes.SET_TOOLBAR_HIDDEN:
+      return {
+        ...state,
+        toolBarHidden: !state.toolBarHidden,
       }
     default:
       return state
