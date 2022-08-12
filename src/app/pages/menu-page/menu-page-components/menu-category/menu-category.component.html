@@ -1,9 +1,9 @@
 <div class="matchbook-font w-full font-bold text-4xl text-center">{{categoryTitle}}</div>
 <div *ngFor="let dish of dishes">
   <div *ngIf="dish.edible">
-    <p class="matchbook-font text-3xl text-center">{{dish.name}}</p>
+    <p (click)="openDialog(dish)" class="matchbook-font text-3xl text-center cursor-pointer">{{dish.name}}</p>
   </div>
   <div *ngIf="!dish.edible">
-    <p class="line-through text-red-500 matchbook-font text-3xl text-center">{{dish.name}}</p>
+    <p (click)="openDialog(dish)" class="line-through text-red-500 matchbook-font text-3xl text-center cursor-pointer">{{dish.name}}</p>
   </div>
 </div>

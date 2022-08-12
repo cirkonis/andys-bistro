@@ -10,6 +10,7 @@ import {SadPageComponent} from "./sad-page/sad-page.component";
 import {FeaturesModule} from "../features/features.module";
 import { MenuCategoryComponent } from './menu-page/menu-page-components/menu-category/menu-category.component';
 import { PreferencesComponent } from './menu-page/menu-page-components/preferences/preferences.component';
+import { IngredientsDialogComponent } from './menu-page/menu-page-components/ingredients-dialog/ingredients-dialog.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { PreferencesComponent } from './menu-page/menu-page-components/preferenc
     SadPageComponent,
     MenuCategoryComponent,
     PreferencesComponent,
+    IngredientsDialogComponent,
   ],
     imports: [
         CommonModule,
