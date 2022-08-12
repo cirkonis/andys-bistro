@@ -1,7 +1,7 @@
 import {EIngredientNames} from "../enums/EIngredientNames";
-import {EIngredientLabels} from "../enums/EIngredientLabels";
+import {EInedibleFlags} from "../enums/EInedibleFlags";
 
 export interface IDishIngredient {
   name: EIngredientNames;
-  contains: EIngredientLabels[];
+  inedibleFlags: EInedibleFlags[];
 }

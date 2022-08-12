@@ -1,0 +1,4 @@
+export enum EInedibleFlagTypes {
+  CAN_NOT_EAT = 'CAN_NOT_EAT',
+  DIETARY_RESTRICTION = "DIETARY_RESTRICTION",
+}
