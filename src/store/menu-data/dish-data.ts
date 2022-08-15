@@ -46,14 +46,14 @@ export const RATATOUILLE: IDish ={
 
 export const BRUSCHETTA: IDish ={
   name: `Bruschetta Française`,
-  description: 'Mozzarella-less will also be served for the lactose intolerant and vegans',
+  disclaimer: 'Mozzarella-less will also be served for the lactose intolerant and vegans',
   edible: true,
   ingredients: [Ingredients.BREAD, Ingredients.TOMATO, Ingredients.GARLIC, Ingredients.ONION, Ingredients.BASIL, Ingredients.MOZZARELLA]
 }
 
 export const BRUSCHETTA_BREADLESS: IDish ={
   name: `Bruschetta Française sans Pain`,
-  description: 'Mozzarella-less will also be served for the lactose intolerant and vegans',
+  disclaimer: 'Mozzarella-less will also be served for the lactose intolerant and vegans',
   edible: true,
   ingredients: [Ingredients.SQUASH, Ingredients.TOMATO, Ingredients.GARLIC, Ingredients.ONION, Ingredients.BASIL, Ingredients.MOZZARELLA]
 }
