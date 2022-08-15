@@ -9,7 +9,7 @@ export const MENU_DATA: IMenu = {
     {
       day: EMenuDays.SUNDAY,
       categoryTitle: EMenuCategories.DINNER,
-      dishes: [Dishes.RATATOUILLE, Dishes.BRUSCHETTA, Dishes.BROCOLI_SALAD]
+      dishes: [Dishes.RATATOUILLE, Dishes.BRUSCHETTA, Dishes.BRUSCHETTA_BREADLESS, Dishes.BROCOLI_SALAD]
     },
     {
       day: EMenuDays.MONDAY,

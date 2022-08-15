@@ -6,7 +6,7 @@ export const BREAD: IDish ={
   name: 'Pain Frais',
   description: 'Freshly made every day!',
   edible: true,
-  ingredients:[],
+  ingredients:[Ingredients.BREAD],
 }
 
 
@@ -41,19 +41,27 @@ export const BRUNCH_BUFFET: IDish = {
 export const RATATOUILLE: IDish ={
   name: `La Célèbre Ratatouille d'Andy`,
   edible: true,
-  ingredients: []
+  ingredients: [Ingredients.POTATO, Ingredients.ONION, Ingredients.GARLIC, Ingredients.GINGER, Ingredients.SQUASH, Ingredients.TOMATO, Ingredients.RED_CHILLI, Ingredients.EGGPLANT, Ingredients.BELL_PEPPER, Ingredients.BASIL]
 }
 
 export const BRUSCHETTA: IDish ={
   name: `Bruschetta Française`,
+  description: 'Mozzarella-less will also be served for the lactose intolerant and vegans',
   edible: true,
-  ingredients: []
+  ingredients: [Ingredients.BREAD, Ingredients.TOMATO, Ingredients.GARLIC, Ingredients.ONION, Ingredients.BASIL, Ingredients.MOZZARELLA]
+}
+
+export const BRUSCHETTA_BREADLESS: IDish ={
+  name: `Bruschetta Française sans Pain`,
+  description: 'Mozzarella-less will also be served for the lactose intolerant and vegans',
+  edible: true,
+  ingredients: [Ingredients.SQUASH, Ingredients.TOMATO, Ingredients.GARLIC, Ingredients.ONION, Ingredients.BASIL, Ingredients.MOZZARELLA]
 }
 
 export const BROCOLI_SALAD: IDish ={
   name: `Salade de Brocoli`,
   edible: true,
-  ingredients: []
+  ingredients: [Ingredients.BROCCOLI, Ingredients.CARROT, Ingredients.ONION, Ingredients.VEGAN_RANCH, Ingredients.SUNFLOWER_SEEDS, Ingredients.DRIED_CRANBERRIES]
 }
 
 // MONDAY DISHES
@@ -61,7 +69,7 @@ export const BROCOLI_SALAD: IDish ={
 export const PASTA_SALAD: IDish ={
   name: `Salade de Pâtes`,
   edible: true,
-  ingredients: [],
+  ingredients: [Ingredients.VEGAN_RANCH, Ingredients.PASTA, Ingredients.TOMATO, Ingredients.BROCCOLI, Ingredients.CAULIFLOWER, Ingredients.PEAS, Ingredients.CARROT, Ingredients.CUCUMBER],
 }
 
 export const CASSEROLE: IDish ={
@@ -87,7 +95,8 @@ export const CHICKPEA_SALAD: IDish ={
 export const POTATO_SALAD: IDish ={
   name: `Salade de Pommes de Terre`,
   edible: true,
-  ingredients: [],
+  ingredients: [Ingredients.VEGAN_RANCH, Ingredients.POTATO, Ingredients.TOMATO, Ingredients.BROCCOLI, Ingredients.CAULIFLOWER, Ingredients.PEAS, Ingredients.CARROT, Ingredients.CUCUMBER],
+
 }
 
 export const BOUEF_BOURGUIGNON: IDish ={
