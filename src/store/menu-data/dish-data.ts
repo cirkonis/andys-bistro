@@ -58,8 +58,8 @@ export const BRUSCHETTA_BREADLESS: IDish ={
   ingredients: [Ingredients.SQUASH, Ingredients.TOMATO, Ingredients.GARLIC, Ingredients.ONION, Ingredients.BASIL, Ingredients.MOZZARELLA]
 }
 
-export const BROCOLI_SALAD: IDish ={
-  name: `Salade de Brocoli`,
+export const BROCCOLI_SALAD: IDish ={
+  name: `Salade de Broccoli`,
   edible: true,
   ingredients: [Ingredients.BROCCOLI, Ingredients.CARROT, Ingredients.ONION, Ingredients.VEGAN_RANCH, Ingredients.SUNFLOWER_SEEDS, Ingredients.DRIED_CRANBERRIES]
 }
@@ -73,15 +73,15 @@ export const PASTA_SALAD: IDish ={
 }
 
 export const CASSEROLE: IDish ={
-  name: 'Casserole',
+  name: 'Casserole de Haricots Verts',
   edible: true,
-  ingredients: [],
+  ingredients: [Ingredients.GREEN_BEANS, Ingredients.ONION, Ingredients.MUSHROOM, Ingredients.TURKEY_BACON, Ingredients.BUTTER, Ingredients.SHALLOTS, Ingredients.CHICKEN_BROTH, Ingredients.CREAM],
 }
 
 export const CASSOULET: IDish ={
-  name: 'Cassoulet',
+  name: `Cassoulet aux Champignon Fumé`,
   edible: true,
-  ingredients: [],
+  ingredients: [Ingredients.SHALLOTS, Ingredients.GARLIC, Ingredients.CARROT, Ingredients.CELERY, Ingredients.WHITE_WINE, Ingredients.BEANS, Ingredients.VEGETABLE_BROTH, Ingredients.TOMATO, Ingredients.MUSHROOM],
 }
 
 export const CHICKPEA_SALAD: IDish ={
