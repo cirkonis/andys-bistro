@@ -14,10 +14,41 @@
         <span class="matchbook-font text-2xl font bold">Lunch -  13:30</span>
         <span class="matchbook-font text-2xl font bold">Dinner -  19:00</span>
       </div>
+      <p class="arkana-font text-5xl text-center w-full mt-4">{{days.SUNDAY}}</p>
+      <div class="border-b-2 border-black w-1/5 mx-auto mb-6"></div>
       <div *ngFor="let category of ($edibleMenu | async).categories" class="flex flex-col w-full justify-center">
-        <app-menu-category [categoryTitle]="category.categoryTitle" [dishes]="category.dishes"
-        class="my-4"></app-menu-category>
-        <div class="border-b-2 w-1/2 mx-auto"></div>
+        <div *ngIf="category.day === days.SUNDAY">
+          <app-menu-category [categoryTitle]="category.categoryTitle" [dishes]="category.dishes"
+                             class="my-4"></app-menu-category>
+          <div class="border-b-2 border-gray rounded-full w-1/4 mx-auto my-3"></div>
+        </div>
+      </div>
+      <p class="arkana-font text-5xl text-center mt-4 w-full">{{days.MONDAY}}</p>
+      <div class="border-b-2 border-black w-1/5 mx-auto mb-6"></div>
+      <div *ngFor="let category of ($edibleMenu | async).categories" class="flex flex-col w-full justify-center">
+        <div *ngIf="category.day === days.MONDAY">
+          <app-menu-category [categoryTitle]="category.categoryTitle" [dishes]="category.dishes"
+                             class="my-4"></app-menu-category>
+          <div class="border-b-2 border-gray rounded-full w-1/4 mx-auto my-3"></div>
+        </div>
+      </div>
+      <p class="arkana-font text-5xl text-center w-full mt-4">{{days.TUESDAY}}</p>
+      <div class="border-b-2 border-black w-1/5 mx-auto mb-6"></div>
+      <div *ngFor="let category of ($edibleMenu | async).categories" class="flex flex-col w-full justify-center">
+        <div *ngIf="category.day === days.TUESDAY">
+          <app-menu-category [categoryTitle]="category.categoryTitle" [dishes]="category.dishes"
+                             class="my-4"></app-menu-category>
+          <div class="border-b-2 border-gray rounded-full w-1/4 mx-auto my-3"></div>
+        </div>
+      </div>
+      <p class="arkana-font text-5xl text-center w-full mt-4">{{days.WEDNESDAY}}</p>
+      <div class="border-b-2 border-black w-1/5 mx-auto mb-6"></div>
+      <div *ngFor="let category of ($edibleMenu | async).categories" class="flex flex-col w-full justify-center">
+        <div *ngIf="category.day === days.WEDNESDAY">
+          <app-menu-category [categoryTitle]="category.categoryTitle" [dishes]="category.dishes"
+                             class="my-4"></app-menu-category>
+          <div class="border-b-2 border-gray rounded-full w-1/4 mx-auto my-3"></div>
+        </div>
       </div>
     </div>
   </div>

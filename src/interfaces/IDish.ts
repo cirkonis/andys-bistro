@@ -5,4 +5,5 @@ export interface IDish {
   description?: string;
   edible: boolean;
   ingredients: IDishIngredient[];
+  buffet?: boolean;
 }
