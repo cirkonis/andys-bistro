@@ -1,6 +1,9 @@
 export enum EInedibleFlags {
   VEGAN ='VEGAN',
   VEGETARIAN = 'VEGETARIAN',
+  GLUTEN = 'GLUTEN',
+  LACTOSE = 'LACTOSE',
+  TOMATO = 'TOMATO',
   PEANUTS='PEANUTS',
   ONION='ONION',
 }

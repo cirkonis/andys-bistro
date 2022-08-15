@@ -16,6 +16,24 @@ export const INEDIBLE_DATA: IInedibleFlag[] = [
     isActive: false
   },
   {
+    label: EInedibleFlags.GLUTEN,
+    displayName: 'Gluten Intolerant',
+    type: EInedibleFlagTypes.DIETARY_RESTRICTION,
+    isActive: false
+  },
+  {
+    label: EInedibleFlags.LACTOSE,
+    displayName: 'Lactose Intolerant',
+    type: EInedibleFlagTypes.DIETARY_RESTRICTION,
+    isActive: false
+  },
+  {
+    label: EInedibleFlags.TOMATO,
+    displayName: 'Tomato',
+    type: EInedibleFlagTypes.CAN_NOT_EAT,
+    isActive: false,
+  },
+  {
     label: EInedibleFlags.PEANUTS,
     displayName: 'Peanuts',
     type: EInedibleFlagTypes.CAN_NOT_EAT,
