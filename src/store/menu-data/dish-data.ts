@@ -7,6 +7,7 @@ export const BREAD: IDish ={
   description: 'Freshly made every day!',
   edible: true,
   ingredients:[Ingredients.BREAD],
+  buffet: true,
 }
 
 
@@ -87,7 +88,7 @@ export const CASSOULET: IDish ={
 export const CHICKPEA_SALAD: IDish ={
   name: `Salade de Pois Chiches`,
   edible: true,
-  ingredients: [],
+  ingredients: [Ingredients.CHICK_PEAS, Ingredients.CUCUMBER, Ingredients.TOMATO, Ingredients.BELL_PEPPER, Ingredients.ONION, Ingredients.LEMON],
 }
 
 //TUESDAY DISHES
@@ -102,23 +103,23 @@ export const POTATO_SALAD: IDish ={
 export const BOUEF_BOURGUIGNON: IDish ={
   name: 'Bouef Bourguignon',
   edible: true,
-  ingredients: []
+  ingredients: [Ingredients.BEEF, Ingredients.TURKEY_BACON, Ingredients.ONION, Ingredients.SHALLOTS, Ingredients.CARROT, Ingredients.GARLIC, Ingredients.RED_WINE, Ingredients.BUTTER]
 }
 
 export const MUSHROOM_BOURGUIGNON: IDish ={
   name: 'Mushroom Bourguignon',
   edible: true,
-  ingredients: []
+  ingredients: [Ingredients.ONION, Ingredients.GARLIC, Ingredients.MUSHROOM, Ingredients.RED_WINE, Ingredients.TOMATO, Ingredients.CARROT, Ingredients.CELERY, Ingredients.VEGETABLE_BROTH, Ingredients.FLOUR]
 }
 
 export const GOAT_CHEESE_BAGUETTE: IDish ={
   name: 'Baguette au Chèvre',
   edible: true,
-  ingredients: []
+  ingredients: [Ingredients. GOAT_CHEESE, Ingredients.BREAD,Ingredients.MAPLE_SYRUP]
 }
 
 export const LENTIL_SALAD: IDish ={
   name: 'Salade de Lentilles',
   edible: true,
-  ingredients: []
+  ingredients: [Ingredients.LENTILS, Ingredients.AVOCADO, Ingredients.SPINNACH, Ingredients.WALNUTS, Ingredients.APPLE, Ingredients.POMEGRANATE, Ingredients.ORANGE, Ingredients.TAHINI, Ingredients.GARLIC]
 }
