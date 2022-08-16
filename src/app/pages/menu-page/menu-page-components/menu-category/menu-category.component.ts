@@ -2,6 +2,8 @@ import {Component, Input} from '@angular/core';
 import {IDish} from "../../../../../interfaces/IDish";
 import {OpenIngredientDialog} from "../../../../../store/menu.actions";
 import {Store} from "@ngrx/store";
+import {selectMenuLanguage} from "../../../../../store/menu.selectors";
+import {ELanguages} from "../../../../../enums/ELanguages";
 
 @Component({
   selector: 'app-menu-category',
@@ -11,6 +13,10 @@ export class MenuCategoryComponent {
   @Input() categoryTitle: string
 
   @Input() dishes: IDish[];
+
+  languages = ELanguages;
+
+  menuLanguage$ = this.store.select(selectMenuLanguage);
 
   constructor(private store: Store) {}
 

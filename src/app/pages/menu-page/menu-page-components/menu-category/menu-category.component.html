@@ -1,9 +1,15 @@
 <div class="matchbook-font w-full font-bold text-4xl text-center mb-3">{{categoryTitle}}</div>
 <div *ngFor="let dish of dishes">
-  <div *ngIf="dish.edible">
+  <div *ngIf="dish.edible && (menuLanguage$ | async) === languages.FRENCH">
     <p (click)="openDialog(dish)" class="my-2 matchbook-font text-3xl text-center cursor-pointer max-w-fit mx-auto">{{dish.name}}</p>
   </div>
-  <div *ngIf="!dish.edible">
+  <div *ngIf="dish.edible && (menuLanguage$ | async) === languages.ENGLISH">
+    <p (click)="openDialog(dish)" class="my-2 matchbook-font text-3xl text-center cursor-pointer max-w-fit mx-auto">{{dish.translatedName}}</p>
+  </div>
+  <div *ngIf="!dish.edible && (menuLanguage$ | async) === languages.ENGLISH">
+    <p (click)="openDialog(dish)" class="my-2 line-through text-red-500 matchbook-font text-3xl text-center cursor-pointer max-w-fit mx-auto">{{dish.translatedName}}</p>
+  </div>
+  <div *ngIf="!dish.edible && (menuLanguage$ | async) === languages.FRENCH">
     <p (click)="openDialog(dish)" class="my-2 line-through text-red-500 matchbook-font text-3xl text-center cursor-pointer max-w-fit mx-auto">{{dish.name}}</p>
   </div>
 </div>

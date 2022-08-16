@@ -8,5 +8,4 @@ export interface IDish {
   buffet?: boolean;
   description?: string;
   disclaimer?: string;
-  green?: boolean;
 }
