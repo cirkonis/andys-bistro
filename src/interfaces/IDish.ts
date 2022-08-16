@@ -2,9 +2,11 @@ import {IDishIngredient} from "./IDishIngredient";
 
 export interface IDish {
   name: string;
-  description?: string;
-  disclaimer?: string;
+  translatedName: string;
   edible: boolean;
   ingredients: IDishIngredient[];
   buffet?: boolean;
+  description?: string;
+  disclaimer?: string;
+  green?: boolean;
 }
