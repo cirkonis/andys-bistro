@@ -15,3 +15,4 @@ export const selectSelectedDish = createSelector(getMenuState, (state) => state.
 
 export const selectDialogVisibility = createSelector(getMenuState, (state) => state.ingredientDialogVisible);
 
+export const selectMenuLanguage = createSelector(getMenuState, (state) => state.menuLanguage);

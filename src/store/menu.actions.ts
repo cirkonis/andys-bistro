@@ -1,6 +1,7 @@
 import {Action} from "@ngrx/store";
 import {IInedibleFlag} from "../interfaces/IInedibleFlag";
 import {IDish} from "../interfaces/IDish";
+import {ELanguages} from "../enums/ELanguages";
 
 export enum MenuActionTypes {
   GET_STATE='GET_STATE',
@@ -8,6 +9,7 @@ export enum MenuActionTypes {
   SET_TOOLBAR_HIDDEN='SET_TOOLBAR_HIDDEN',
   OPEN_INGREDIENT_DIALOG='OPEN_INGREDIENT_DIALOG',
   CLOSE_INGREDIENT_DIALOG='CLOSE_INGREDIENT_DIALOG',
+  SET_MENU_LANGUAGE='SET_MENU_LANGUAGE',
 }
 
 export class GetStateAction implements Action {
@@ -39,5 +41,11 @@ export class CloseIngredientDialog implements Action {
   readonly type = MenuActionTypes.CLOSE_INGREDIENT_DIALOG;
 
   constructor(){}
+}
+
+export class SetMenuLanguage implements Action {
+  readonly type = MenuActionTypes.SET_MENU_LANGUAGE;
+
+  constructor(readonly payload: ELanguages) {}
 }
 

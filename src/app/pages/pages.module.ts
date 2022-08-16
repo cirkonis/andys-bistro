@@ -11,6 +11,7 @@ import {FeaturesModule} from "../features/features.module";
 import { MenuCategoryComponent } from './menu-page/menu-page-components/menu-category/menu-category.component';
 import { PreferencesComponent } from './menu-page/menu-page-components/preferences/preferences.component';
 import { IngredientsDialogComponent } from './menu-page/menu-page-components/ingredients-dialog/ingredients-dialog.component';
+import { TranslationButtonComponent } from './menu-page/menu-page-components/translation-button/translation-button.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { IngredientsDialogComponent } from './menu-page/menu-page-components/ing
     MenuCategoryComponent,
     PreferencesComponent,
     IngredientsDialogComponent,
+    TranslationButtonComponent,
   ],
     imports: [
         CommonModule,

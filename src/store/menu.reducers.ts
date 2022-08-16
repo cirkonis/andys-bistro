@@ -5,6 +5,7 @@ import {Action} from "@ngrx/store";
 import {MenuActionTypes} from "./menu.actions";
 import {IInedibleFlag} from "../interfaces/IInedibleFlag"
 import {IDish} from "../interfaces/IDish";
+import {ELanguages} from "../enums/ELanguages";
 
 export interface MenuState {
   menu: IMenu;
@@ -13,6 +14,7 @@ export interface MenuState {
   toolBarHidden: boolean;
   ingredientDialogVisible: boolean;
   selectedDish: IDish;
+  menuLanguage: ELanguages;
 }
 
 const initialState: MenuState = {
@@ -22,6 +24,7 @@ const initialState: MenuState = {
   toolBarHidden: true,
   ingredientDialogVisible: false,
   selectedDish: null,
+  menuLanguage: ELanguages.FRENCH,
 }
 
 export function reducer(state = initialState, action: Action): MenuState {
@@ -39,8 +42,6 @@ export function reducer(state = initialState, action: Action): MenuState {
       newPreferences[index] = { ... (action as any).payload, isActive: activeState}
 
       let activePreferences: IInedibleFlag[] = newPreferences.filter(preference => preference.isActive === true);
-
-      console.log(activePreferences);
 
       // Update edible dishes
       let newEdibleMenu: IMenu = JSON.parse(JSON.stringify(state.edibleMenu));
@@ -81,6 +82,11 @@ export function reducer(state = initialState, action: Action): MenuState {
         ...state,
         selectedDish: null,
         ingredientDialogVisible: false,
+      }
+    case MenuActionTypes.SET_MENU_LANGUAGE:
+      return {
+        ...state,
+        menuLanguage: (action as any).payload,
       }
     default:
       return state
