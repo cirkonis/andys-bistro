@@ -54,7 +54,7 @@ export const BRUSCHETTA: IDish = {
   name: `Bruschetta Française`,
   disclaimer: 'Mozzarella-less will also be served for the lactose intolerant and vegans',
   edible: true,
-  ingredients: [Ingredients.BREAD, Ingredients.TOMATO, Ingredients.GARLIC, Ingredients.ONION, Ingredients.BASIL, Ingredients.MOZZARELLA],
+  ingredients: [Ingredients.BREAD, Ingredients.TOMATO, Ingredients.GARLIC_UNCOOKED, Ingredients.ONION_UNCOOKED, Ingredients.BASIL, Ingredients.MOZZARELLA],
   translatedName: 'French Bruschetta',
 }
 
@@ -62,14 +62,14 @@ export const BRUSCHETTA_BREADLESS: IDish ={
   name: `Bruschetta Française sans Pain`,
   disclaimer: 'Mozzarella-less will also be served for the lactose intolerant and vegans',
   edible: true,
-  ingredients: [Ingredients.SQUASH, Ingredients.TOMATO, Ingredients.GARLIC, Ingredients.ONION, Ingredients.BASIL, Ingredients.MOZZARELLA],
+  ingredients: [Ingredients.SQUASH, Ingredients.TOMATO, Ingredients.GARLIC_UNCOOKED, Ingredients.ONION_UNCOOKED, Ingredients.BASIL, Ingredients.MOZZARELLA],
   translatedName: 'Breadless Bruschetta',
 }
 
 export const BROCCOLI_SALAD: IDish ={
   name: `Salade de Broccoli`,
   edible: true,
-  ingredients: [Ingredients.BROCCOLI, Ingredients.CARROT, Ingredients.ONION, Ingredients.VEGAN_RANCH, Ingredients.SUNFLOWER_SEEDS, Ingredients.DRIED_CRANBERRIES],
+  ingredients: [Ingredients.BROCCOLI_UNCOOKED, Ingredients.CARROT_UNCOOKED, Ingredients.ONION_UNCOOKED, Ingredients.VEGAN_RANCH, Ingredients.SUNFLOWER_SEEDS, Ingredients.DRIED_CRANBERRIES],
   translatedName: 'Broccoli Salad',
 }
 
@@ -78,7 +78,7 @@ export const BROCCOLI_SALAD: IDish ={
 export const PASTA_SALAD: IDish ={
   name: `Salade de Pâtes`,
   edible: true,
-  ingredients: [Ingredients.VEGAN_RANCH, Ingredients.PASTA, Ingredients.TOMATO, Ingredients.BROCCOLI, Ingredients.CAULIFLOWER, Ingredients.PEAS, Ingredients.CARROT, Ingredients.CUCUMBER],
+  ingredients: [Ingredients.VEGAN_RANCH, Ingredients.PASTA, Ingredients.TOMATO, Ingredients.BROCCOLI_UNCOOKED, Ingredients.CAULIFLOWER_UNCOOKED, Ingredients.PEAS, Ingredients.CARROT_UNCOOKED, Ingredients.CUCUMBER],
   translatedName: 'Pasta Salad',
 }
 
@@ -99,7 +99,7 @@ export const CASSOULET: IDish ={
 export const CHICKPEA_SALAD: IDish ={
   name: `Salade de Pois Chiches`,
   edible: true,
-  ingredients: [Ingredients.CHICK_PEAS, Ingredients.CUCUMBER, Ingredients.TOMATO, Ingredients.BELL_PEPPER, Ingredients.ONION, Ingredients.LEMON],
+  ingredients: [Ingredients.CHICK_PEAS, Ingredients.CUCUMBER, Ingredients.TOMATO, Ingredients.BELL_PEPPER, Ingredients.ONION_UNCOOKED, Ingredients.LEMON],
   translatedName: 'Chick Pea Salad',
 }
 
@@ -108,7 +108,7 @@ export const CHICKPEA_SALAD: IDish ={
 export const POTATO_SALAD: IDish ={
   name: `Salade de Pommes de Terre`,
   edible: true,
-  ingredients: [Ingredients.VEGAN_RANCH, Ingredients.POTATO, Ingredients.TOMATO, Ingredients.BROCCOLI, Ingredients.CAULIFLOWER, Ingredients.PEAS, Ingredients.CARROT, Ingredients.CUCUMBER],
+  ingredients: [Ingredients.VEGAN_RANCH, Ingredients.POTATO, Ingredients.TOMATO, Ingredients.BROCCOLI_UNCOOKED, Ingredients.CAULIFLOWER_UNCOOKED, Ingredients.PEAS, Ingredients.CARROT_UNCOOKED, Ingredients.CUCUMBER],
   translatedName: 'Potato Salad',
 
 }
