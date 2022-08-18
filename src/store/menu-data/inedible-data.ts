@@ -16,6 +16,12 @@ export const INEDIBLE_DATA: IInedibleFlag[] = [
     isActive: false
   },
   {
+    label: EInedibleFlags.PESCETARIAN,
+    displayName: 'Pescetarian',
+    type: EInedibleFlagTypes.DIETARY_RESTRICTION,
+    isActive: false
+  },
+  {
     label: EInedibleFlags.GLUTEN,
     displayName: 'Gluten Intolerant',
     type: EInedibleFlagTypes.DIETARY_RESTRICTION,
@@ -27,22 +33,36 @@ export const INEDIBLE_DATA: IInedibleFlag[] = [
     type: EInedibleFlagTypes.DIETARY_RESTRICTION,
     isActive: false
   },
+  //---------------------------------------------------------------------------
   {
-    label: EInedibleFlags.TOMATO,
-    displayName: 'Tomato',
+    label: EInedibleFlags.APPLE,
+    displayName: 'Apple',
     type: EInedibleFlagTypes.CAN_NOT_EAT,
     isActive: false,
   },
   {
-    label: EInedibleFlags.PEANUTS,
-    displayName: 'Peanuts',
+    label: EInedibleFlags.CITRUS_FRUIT,
+    displayName: 'Citrus fruit',
     type: EInedibleFlagTypes.CAN_NOT_EAT,
     isActive: false,
   },
   {
-    label: EInedibleFlags.ONION,
-    displayName: 'Onion',
+    label: EInedibleFlags.MUSHROOM,
+    displayName: 'Mushroom',
     type: EInedibleFlagTypes.CAN_NOT_EAT,
-    isActive: false
+    isActive: false,
   },
+  {
+    label: EInedibleFlags.WALNUTS,
+    displayName: 'Nuts',
+    type: EInedibleFlagTypes.CAN_NOT_EAT,
+    isActive: false,
+  },
+  {
+    label: EInedibleFlags.UNCOOKED_ROOT_VEGGIES,
+    displayName: 'Uncooked root veggies',
+    type: EInedibleFlagTypes.CAN_NOT_EAT,
+    isActive: false,
+  },
+
 ]

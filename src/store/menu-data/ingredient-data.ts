@@ -3,7 +3,7 @@ import {EInedibleFlags} from "../../enums/EInedibleFlags";
 
 export const APPLE:IDishIngredient ={
   name: 'Apple',
-  inedibleFlags: [],
+  inedibleFlags: [EInedibleFlags.APPLE],
 }
 
 export const AVOCADO: IDishIngredient ={
@@ -28,12 +28,12 @@ export const BELL_PEPPER: IDishIngredient ={
 
 export const BEEF: IDishIngredient ={
   name: 'Beef',
-  inedibleFlags: [EInedibleFlags.VEGAN, EInedibleFlags.VEGETARIAN],
+  inedibleFlags: [EInedibleFlags.VEGAN, EInedibleFlags.VEGETARIAN, EInedibleFlags.PESCETARIAN],
 }
 
 export const BEEF_BROTH: IDishIngredient ={
   name: 'Beef_BROTH',
-  inedibleFlags: [EInedibleFlags.VEGAN, EInedibleFlags.VEGETARIAN],
+  inedibleFlags: [EInedibleFlags.VEGAN, EInedibleFlags.VEGETARIAN, EInedibleFlags.PESCETARIAN],
 }
 
 export const BREAD: IDishIngredient ={
@@ -51,6 +51,11 @@ export const BROCCOLI: IDishIngredient ={
   inedibleFlags: [],
 }
 
+export const BROCCOLI_UNCOOKED: IDishIngredient ={
+  name: 'Broccoli',
+  inedibleFlags: [EInedibleFlags.UNCOOKED_ROOT_VEGGIES],
+}
+
 export const BUTTER: IDishIngredient ={
   name: 'Butter',
   inedibleFlags: [EInedibleFlags.VEGAN, EInedibleFlags.LACTOSE]
@@ -61,9 +66,19 @@ export const CARROT: IDishIngredient = {
   inedibleFlags: []
 }
 
+export const CARROT_UNCOOKED: IDishIngredient = {
+  name: 'Carrot',
+  inedibleFlags: [EInedibleFlags.UNCOOKED_ROOT_VEGGIES]
+}
+
 export const CAULIFLOWER: IDishIngredient ={
   name: 'Cauliflower',
   inedibleFlags: [],
+}
+
+export const CAULIFLOWER_UNCOOKED: IDishIngredient ={
+  name: 'Cauliflower',
+  inedibleFlags: [EInedibleFlags.UNCOOKED_ROOT_VEGGIES],
 }
 
 export const CELERY: IDishIngredient ={
@@ -73,7 +88,7 @@ export const CELERY: IDishIngredient ={
 
 export const CHICKEN_BROTH: IDishIngredient ={
   name: 'Chicken Broth',
-  inedibleFlags: [EInedibleFlags.VEGAN, EInedibleFlags.VEGETARIAN]
+  inedibleFlags: [EInedibleFlags.VEGAN, EInedibleFlags.VEGETARIAN, EInedibleFlags.PESCETARIAN]
 }
 
 export const CHICK_PEAS: IDishIngredient ={
@@ -111,6 +126,11 @@ export const GARLIC: IDishIngredient ={
   inedibleFlags: [],
 }
 
+export const GARLIC_UNCOOKED: IDishIngredient ={
+  name: 'Garlic',
+  inedibleFlags: [EInedibleFlags.UNCOOKED_ROOT_VEGGIES],
+}
+
 export const GINGER: IDishIngredient ={
   name: 'Ginger',
   inedibleFlags: [],
@@ -128,7 +148,7 @@ export const GOAT_CHEESE: IDishIngredient ={
 
 export const LEMON: IDishIngredient ={
   name: 'Lemon',
-  inedibleFlags: [],
+  inedibleFlags: [EInedibleFlags.CITRUS_FRUIT],
 }
 
 export const LENTILS: IDishIngredient ={
@@ -143,7 +163,7 @@ export const MOZZARELLA: IDishIngredient ={
 
 export const MUSHROOM: IDishIngredient ={
   name: 'Mushroom',
-  inedibleFlags: [],
+  inedibleFlags: [EInedibleFlags.MUSHROOM],
 }
 
 export const MAPLE_SYRUP: IDishIngredient ={
@@ -153,12 +173,17 @@ export const MAPLE_SYRUP: IDishIngredient ={
 
 export const ONION: IDishIngredient = {
   name: 'Onion',
-  inedibleFlags: [EInedibleFlags.ONION]
+  inedibleFlags: [],
+}
+
+export const ONION_UNCOOKED: IDishIngredient = {
+  name: 'Onion',
+  inedibleFlags: [EInedibleFlags.UNCOOKED_ROOT_VEGGIES],
 }
 
 export const ORANGE: IDishIngredient ={
   name: 'Orange',
-  inedibleFlags: [],
+  inedibleFlags: [EInedibleFlags.CITRUS_FRUIT],
 }
 
 export const PARSLEY: IDishIngredient ={
@@ -223,7 +248,7 @@ export const TAHINI: IDishIngredient ={
 
 export const TOMATO: IDishIngredient ={
   name: 'Tomato',
-  inedibleFlags: [EInedibleFlags.TOMATO]
+  inedibleFlags: []
 }
 
 export const TURKEY_BACON: IDishIngredient ={
@@ -233,6 +258,11 @@ export const TURKEY_BACON: IDishIngredient ={
 
 export const VEGAN_RANCH: IDishIngredient = {
   name: 'Vegan Ranch',
+  inedibleFlags: [EInedibleFlags.APPLE],
+}
+
+export const VEGAN_MAYO: IDishIngredient = {
+  name: 'Vegan Mayo',
   inedibleFlags: [],
 }
 
@@ -243,7 +273,7 @@ export const VEGETABLE_BROTH: IDishIngredient ={
 
 export const WALNUTS: IDishIngredient ={
   name: 'Walnuts',
-  inedibleFlags: [],
+  inedibleFlags: [EInedibleFlags.WALNUTS],
 }
 
 export const WHITE_WINE:IDishIngredient ={
